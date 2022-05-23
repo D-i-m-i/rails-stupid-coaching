@@ -1,0 +1,18 @@
+<%# <% console %>
+<div class="container">
+  <h1>Stupid Coaching</h1>
+  <div class="question">
+    <div class="text-only">
+      <p class="question_text"> <%= params[:question] %> </p>
+      <p><i>-- You</i><br><br></p>
+    </div>
+  </div>
+
+  <div class="answer">
+    <div class="text-only">
+      <p class="answer_text"> <%= @answer %> </p>
+      <p><i>-- Your coach</i><br><br><br></p>
+    </div>
+  </div>
+  <%= link_to 'Back to questions page', ask_path %>
+</div>
